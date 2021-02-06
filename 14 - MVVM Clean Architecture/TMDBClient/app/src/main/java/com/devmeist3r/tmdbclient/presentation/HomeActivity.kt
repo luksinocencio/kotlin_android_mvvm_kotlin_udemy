@@ -15,6 +15,7 @@ class HomeActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     binding = DataBindingUtil.setContentView(this,R.layout.activity_home)
+
     binding.movieButton.setOnClickListener {
       val intent = Intent(this, MovieActivity::class.java)
       startActivity(intent)
